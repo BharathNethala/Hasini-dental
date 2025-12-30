@@ -54,9 +54,9 @@ export const Footer: React.FC = () => {
     }
   };
 
-  const clinicAddress = 'Dr. Bhanu Kiran Dental Care, Eluru, Andhra Pradesh';
+  const clinicAddress = 'Rainbow Dental Care, kakinada, Andhra Pradesh';
   const mapLink =
-    'https://www.google.com/maps/place/Dr.+Bhanu+Kiran+Dental+Care/@16.7145586,81.0981588,17z/data=!3m1!4b1!4m6!3m5!1s0x3a3615407708b80b:0xf2572f3f44c63a8b!8m2!3d16.7145586!4d81.0981588!16s%2Fg%2F11p66w9bnx?entry=ttu';
+    'https://www.google.com/maps/search/rainbow+dental+clinic+kakinada/@16.9701428,82.2453081,13z?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D';
 
   return (
     <footer className="bg-white dark:bg-slate-950 pt-24 pb-12 border-t border-gray-100 dark:border-slate-900 transition-colors duration-300">
@@ -72,12 +72,12 @@ export const Footer: React.FC = () => {
                 <Logo className="h-14 w-14" />
               </div>
               <span className="font-heading text-2xl font-bold tracking-tight text-medical-darkBlue dark:text-white transition-colors group-hover:text-medical-blue">
-                Dr. Bhanu Kiran <span className="text-medical-accent">Dental</span>
+                Rainbow <span className="text-medical-accent">Dental</span>
               </span>
             </div>
             <p className="text-secondary dark:text-slate-400 leading-relaxed">
               We provide world-class dental care with specialized treatments for
-              the whole family. Led by Dr. Bhanu Kiran, your experience is safe,
+              the whole family. Led by Dr. Dr.Kalyani, your experience is safe,
               painless, and effective.
             </p>
             <div className="flex gap-4">
@@ -180,14 +180,14 @@ export const Footer: React.FC = () => {
                 </span>
               </a>
               <a
-                href="mailto:care@bhanu-kiran-dental.com"
+                href="mailto:care@rainbow-dental.com"
                 className="flex items-center gap-4 group card-perfect p-3 rounded-2xl hover:bg-gray-50 dark:hover:bg-slate-900 border border-transparent hover:border-blue-100 dark:hover:border-slate-800"
               >
                 <div className="text-medical-blue group-hover:scale-110 transition-transform">
                   <Mail size={20} />
                 </div>
                 <span className="text-secondary dark:text-slate-400 group-hover:text-medical-blue transition-colors text-sm">
-                  care@bhanu-kiran-dental.com
+                  care@rainbow-dental.com
                 </span>
               </a>
             </div>
@@ -250,7 +250,7 @@ export const Footer: React.FC = () => {
             <p className="leading-relaxed">
               © 2024{' '}
               <span className="font-bold text-medical-darkBlue dark:text-slate-300">
-                Dr. Bhanu Kiran Dental Clinic
+                Rainbow Dental Clinic
               </span>
               . Proudly keeping smiles bright.
             </p>

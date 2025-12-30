@@ -32,7 +32,7 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ onBenefitClick }) => {
     },
     { 
       title: 'Expert Dentists', 
-      desc: 'Led by MDS specialists with 20+ years of experience.',
+      desc: 'Led by MDS specialists with 15+ years of experience.',
       icon: <Award className="text-medical-yellow" size={32} />,
       ctx: 'Checkup'
     },

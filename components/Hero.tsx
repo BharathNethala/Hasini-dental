@@ -29,7 +29,7 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick }) => {
             </h1>
             
             <h2 className="reveal text-xl md:text-2xl font-subheading font-semibold text-blue-50/90 mb-8 max-w-lg leading-relaxed" style={{ transitionDelay: '200ms' }}>
-              Experience painless, specialized dentistry led by Dr. Bhanu kiran 20+ years of expertise.
+              Experience painless, specialized dentistry led by Dr. Kalyani 20+ years of expertise.
             </h2>
             
             <div className="reveal flex flex-col sm:flex-row gap-5" style={{ transitionDelay: '400ms' }}>
