@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Activity, Shield, Smile, Heart, Sparkles, UserRound, ArrowRight } from 'lucide-react';
 
@@ -8,12 +7,42 @@ interface ServicesProps {
 
 export const Services: React.FC<ServicesProps> = ({ onBookService }) => {
   const services = [
-    { title: 'Digital Dentistry', desc: 'Precision diagnostics using 3D scanning technology.', icon: <Activity size={24} /> },
-    { title: 'Laser Whitening', desc: 'Medical-grade whitening for immediate results.', icon: <Smile size={24} /> },
-    { title: 'Zirconia Implants', desc: 'Highly durable, biocompatible restorative solutions.', icon: <Shield size={24} /> },
-    { title: 'Invisible Aligners', desc: 'Discrete orthodontic correction for all ages.', icon: <Heart size={24} /> },
-    { title: 'Smile Makeovers', desc: 'Tailored aesthetic reconstruction plans.', icon: <Sparkles size={24} /> },
-    { title: 'Pediatric Care', desc: 'Gentle clinical environment for young patients.', icon: <UserRound size={24} /> }
+    {
+      title: 'Digital Dentistry',
+      desc: 'Precision diagnostics using 3D scanning technology.',
+      icon: <Activity size={24} />,
+      image: 'https://images.pexels.com/photos/6812508/pexels-photo-6812508.jpeg?auto=compress&cs=tinysrgb&w=1200'
+    },
+    {
+      title: 'Laser Whitening',
+      desc: 'Medical-grade whitening for immediate results.',
+      icon: <Smile size={24} />,
+      image: 'https://images.pexels.com/photos/5355839/pexels-photo-5355839.jpeg?auto=compress&cs=tinysrgb&w=1200'
+    },
+    {
+      title: 'Zirconia Implants',
+      desc: 'Highly durable, biocompatible restorative solutions.',
+      icon: <Shield size={24} />,
+      image: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=80'
+    },
+    {
+      title: 'Invisible Aligners',
+      desc: 'Discrete orthodontic correction for all ages.',
+      icon: <Heart size={24} />,
+      image: 'https://images.pexels.com/photos/28470229/pexels-photo-28470229.jpeg?auto=compress&cs=tinysrgb&w=1200'
+    },
+    {
+      title: 'Smile Makeovers',
+      desc: 'Tailored aesthetic reconstruction plans.',
+      icon: <Sparkles size={24} />,
+      image: 'https://images.pexels.com/photos/6627524/pexels-photo-6627524.jpeg?auto=compress&cs=tinysrgb&w=1200'
+    },
+    {
+      title: 'Pediatric Care',
+      desc: 'Gentle clinical environment for young patients.',
+      icon: <UserRound size={24} />,
+      image: 'https://images.pexels.com/photos/35438241/pexels-photo-35438241.jpeg?auto=compress&cs=tinysrgb&w=1200'
+    }
   ];
 
   return (
@@ -23,27 +52,46 @@ export const Services: React.FC<ServicesProps> = ({ onBookService }) => {
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-dental-gray-primary mb-4">
             Clinical Services
           </h2>
-          <p className="text-dental-gray-secondary font-sans italic">Advanced procedures delivered with medical excellence.</p>
+          <p className="text-dental-gray-secondary font-sans italic">
+            Advanced procedures delivered with medical excellence.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, idx) => (
-            <div 
+            <div
               key={idx}
-              className="group bg-white p-8 rounded-xl border border-gray-100 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 reveal"
+              className="group bg-white rounded-xl border border-gray-100 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 reveal overflow-hidden"
               style={{ transitionDelay: `${idx * 100}ms` }}
             >
-              <div className="w-14 h-14 bg-dental-white-secondary rounded-xl flex items-center justify-center text-dental-blue-primary mb-6 transition-colors group-hover:bg-dental-blue-primary group-hover:text-white">
-                {service.icon}
+              {/* Image */}
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-full h-44 object-cover"
+              />
+
+              {/* Content */}
+              <div className="p-8">
+                <div className="w-14 h-14 bg-dental-white-secondary rounded-xl flex items-center justify-center text-dental-blue-primary mb-6 transition-colors group-hover:bg-dental-blue-primary group-hover:text-white">
+                  {service.icon}
+                </div>
+
+                <h3 className="text-xl font-subheading font-semibold text-dental-gray-primary mb-3">
+                  {service.title}
+                </h3>
+
+                <p className="text-dental-gray-secondary font-sans text-sm leading-relaxed mb-6">
+                  {service.desc}
+                </p>
+
+                <button
+                  onClick={() => onBookService(service.title)}
+                  className="inline-flex items-center gap-2 text-dental-blue-primary font-subheading font-semibold text-xs uppercase tracking-widest transition-all group-hover:gap-4"
+                >
+                  Inquire Now <ArrowRight size={14} />
+                </button>
               </div>
-              <h3 className="text-xl font-subheading font-semibold text-dental-gray-primary mb-3">{service.title}</h3>
-              <p className="text-dental-gray-secondary font-sans text-sm leading-relaxed mb-6">{service.desc}</p>
-              <button 
-                onClick={() => onBookService(service.title)}
-                className="inline-flex items-center gap-2 text-dental-blue-primary font-subheading font-semibold text-xs uppercase tracking-widest transition-all group-hover:gap-4"
-              >
-                Inquire Now <ArrowRight size={14} />
-              </button>
             </div>
           ))}
         </div>

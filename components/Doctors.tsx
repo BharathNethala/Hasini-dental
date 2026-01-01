@@ -8,7 +8,7 @@ interface DoctorsProps {
 export const Doctors: React.FC<DoctorsProps> = ({ onDoctorClick }) => {
   const doctors = [
     {
-      name: 'Dr. Kalyani',
+      name: 'Dr. Hasini',
       qual: 'MDS Specialist',
       exp: 'Experienced Dental Surgeon',
       spec: 'Lead Dental Specialist',
@@ -28,7 +28,7 @@ export const Doctors: React.FC<DoctorsProps> = ({ onDoctorClick }) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 reveal">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary dark:text-white mb-4">
-            Meet Dr. Kalyani
+            Meet Dr. Hasini
           </h2>
           <p className="text-lg text-secondary dark:text-slate-400 max-w-2xl mx-auto">
             Providing expert dental care with a gentle touch and careful attention to every patient's needs.

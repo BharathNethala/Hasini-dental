@@ -1,9 +1,9 @@
 {
-  "name": "rainbow-dental",
+  "name": "Hasini-dental",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://BharathNethala.github.io/rainbow-dental",
+  "homepage": "https://BharathNethala.github.io/Hasini-dental",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
